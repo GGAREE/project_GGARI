@@ -15,7 +15,7 @@ grant connect,resource,DBA to DBCINQ;
 conn DBCINQ/a1234;
 
 --유저 삭제
-drop user DBCINQ;
+drop user DBCINQ; 
 
 
 ---- DBCINQ 접속 후 테이블 생성

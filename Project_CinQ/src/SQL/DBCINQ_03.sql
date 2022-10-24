@@ -94,7 +94,7 @@ loc_name varchar2(50),
 addr varchar2(100),
 max_count number(3)
 );
-
+ 
 desc place;
 select * from place;
 
