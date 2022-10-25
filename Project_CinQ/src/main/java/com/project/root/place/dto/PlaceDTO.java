@@ -67,7 +67,7 @@ public class PlaceDTO {
 		this.loc_sep_name = loc_sep_name;
 	}
 	
-	
+	 
 	
 	
 }

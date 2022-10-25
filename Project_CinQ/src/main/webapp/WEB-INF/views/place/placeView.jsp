@@ -61,4 +61,4 @@ td {padding: 5px;}
    <c:import url="../default/footer.jsp"/>
 
 </body>
-</html>
+</html> 

@@ -19,3 +19,4 @@ public interface PlaceService {
 	
     public String placeDelete(String id, int write_no, String imageFileName, HttpServletRequest request);
 }
+ 
