@@ -126,7 +126,8 @@
 		</div>
 	</div>
 	<br><br><br>
-	<a href="/root/join/joinAllListNum">게시판</a>
+	<a href="/root/join/joinAllListNum">게시판</a> &nbsp;
+	<a href="/root/place/placeAllListNum">장소 게시판</a>
 	<c:import url="default/footer.jsp"/>
 </body>
 </html>

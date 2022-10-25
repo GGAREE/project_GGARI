@@ -108,9 +108,15 @@ function writeSave(){
 	
 	 var addrResult = "";
 	 
+	 
+	 
  	addrResult = addrRegion + "/" + addressDo + "/" + addressSiGunGu + "/" + addrPlus;
 	$("#addrResult").val(addrResult);   
+	$("#loc_sep_name").val(addressSiGunGu);
+	
 	rentPlace_form.submit();
+	
+	
 }
 
 </script>
@@ -133,8 +139,9 @@ function writeSave(){
          <b>지 역</b>&nbsp;
           <select id="addrRegion" name="addrRegion" ></select>
           <select id="addressDo" name="addressDo" ></select>
-          <select id="addressSiGunGu" name="addressSiGunGu" ></select> 
- 		  <input type="hidden" id="addrResult" name="addrResult">        
+          <select id="addressSiGunGu" name="addressSiGunGu" ></select>
+ 		  <input type="hidden" id="addrResult" name="addrResult">
+ 		   <input type="hidden" id="loc_sep_name" name="loc_sep_name">
           <!-- <input type="text" id="addrRegion" name="addrRegion"> -->
           <p>현재 모집가능한 지역은 <b>수도권</b> 입니다.</p> <!-- 아직 동적으로 변환 구현 X  -->
           <br/>

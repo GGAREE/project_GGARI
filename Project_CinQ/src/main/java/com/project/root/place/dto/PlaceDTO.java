@@ -10,6 +10,7 @@ public class PlaceDTO {
 	private String loc_name;
 	private String addr;
 	private int max_count;
+	private String loc_sep_name;
 	
 	public int getWrite_no() {
 		return write_no;
@@ -58,6 +59,12 @@ public class PlaceDTO {
 	}
 	public void setMax_count(int max_count) {
 		this.max_count = max_count;
+	}
+	public String getLoc_sep_name() {
+		return loc_sep_name;
+	}
+	public void setLoc_sep_name(String loc_sep_name) {
+		this.loc_sep_name = loc_sep_name;
 	}
 	
 	

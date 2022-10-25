@@ -33,6 +33,12 @@ public class PlaceFileServiceImpl implements PlaceFileService{
 			e.printStackTrace();
 		}
 		return sysFileName;
+	}
+
+	@Override
+	public void deleteImage(String originFileName) {
+		// TODO Auto-generated method stub
+		
 	}  
 
 	
