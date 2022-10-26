@@ -31,9 +31,8 @@ public class PlaceServiceImpl implements PlaceService{
 		dto.setId(mul.getParameter("id"));
 		dto.setTitle(mul.getParameter("title"));
 		dto.setContent(mul.getParameter("content"));
-		dto.setLoc_name(mul.getParameter("loc_name"));
+		dto.setLoc_name(mul.getParameter("addrResult"));
 		dto.setLoc_sep_name(mul.getParameter("loc_sep_name"));
-		dto.setAddr(mul.getParameter("addrResult"));
 		
 		MultipartFile file = mul.getFile("image");
 		

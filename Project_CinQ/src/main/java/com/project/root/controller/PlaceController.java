@@ -99,6 +99,13 @@ public class PlaceController implements MemberSession{
 			out.println(message);
 			
 		}	
+	 
+	 @GetMapping("/kakaoMapTest")
+		public String kakaoMapTest() {
+			System.out.println("카카오 api 테스트");
+			
+			 return "place/kakaoMapTest";
+		}
 		
 }
 

@@ -24,4 +24,4 @@ public interface PlaceMapper {
 	public PlaceDTO placeView(int write_no);  
 	
 	
-} 
+}  
