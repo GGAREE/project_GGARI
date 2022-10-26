@@ -31,7 +31,7 @@ max_count number(3)
 	<select id="placeAllListNum" resultMap="place">
       select B.* from
       (select rownum rn, A. * from   
-      (select * from join order by write_no desc) A) B <!-- date추가해야할지 생각해봐야함 -->
+      (select * from place order by write_no desc) A) B <!-- date추가해야할지 생각해봐야함 -->
       where rn between #{s} and #{e}
    </select>
 	

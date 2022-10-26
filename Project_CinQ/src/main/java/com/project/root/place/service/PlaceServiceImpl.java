@@ -133,7 +133,8 @@ public class PlaceServiceImpl implements PlaceService{
 			int end = num * pageLetter;
 			int start = end + 1 - pageLetter;
 			model.addAttribute("repeat", repeat);
-			model.addAttribute("placeList", mapper.placeAllListNum(start, end)); model.addAttribute("placeList", mapper.PlaceAllList());		
+			model.addAttribute("placeList", mapper.placeAllListNum(start, end)); 
+			
 	}
 
 	@Override

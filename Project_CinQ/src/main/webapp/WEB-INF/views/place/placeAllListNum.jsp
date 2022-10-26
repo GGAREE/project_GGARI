@@ -44,7 +44,8 @@ a:visited {color:#000069;}
          <th width="100px">ID</th>
          <th width="300px">PROFILE</th>
          <th width="300px">PROJECT</th>
-         <th width="1100px">CONTENT</th>
+        <th width="300px">loc_name</th>
+         <th width="800px">CONTENT</th>
       </tr>
       <c:if test="${placeList.size() == 0}">
             <tr>
@@ -66,6 +67,7 @@ a:visited {color:#000069;}
                  	<a href="/root/place/placeView?write_no=${dto.write_no}">${dto.title}><img src="${contextPath}/place/download?imageFileName=${dto.image}" width="200px" height="200px"></a>
                   	</td>
                   </c:if>
+                <td><a href="/root/place/placeView?write_no=${dto.write_no}">${dto.loc_sep_name}</a></td>
 				<td><a href="/root/place/placeView?write_no=${dto.write_no}">${dto.content}</a></td>
             </tr>
       </c:forEach>
@@ -73,7 +75,7 @@ a:visited {color:#000069;}
          <tr>
             <td colspan="6" align="center">
                <c:forEach var="num" begin="1" end="${repeat}">
-                  <a href="placeAllListNum?num=${num}">[  ${num} ]</a>
+                  <a href="placeAllListNum?num=${num}">[${num}]</a>
                </c:forEach>
             </td>
          </tr>

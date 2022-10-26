@@ -24,7 +24,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
 function readURL(input){
 	   var file = input.files[0]; // 파일 정보
@@ -63,11 +62,11 @@ function writeSave(){
 	
 	 var addrResult = "";
 	 
-	 var addr2 = addr2.substring(3, 5);
+	
 	 
  	addrResult = addr1 + "/" + addr2 + "/" + addr3;
 	$("#addrResult").val(addrResult);   
-	
+	  addr2 = addr2.substring(3, 5);
 	$("#loc_sep_name").val(addr2);
 		
 	rentPlace_form.submit();
