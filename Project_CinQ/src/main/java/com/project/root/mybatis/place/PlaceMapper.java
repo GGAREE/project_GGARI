@@ -21,7 +21,10 @@ public interface PlaceMapper {
 
 	public int selectPlaceCount();
 
-	public PlaceDTO placeView(int write_no);  
+	public PlaceDTO placeView(int write_no);
+
+	public List<PlaceDTO> placeSearchList(@Param("l")String loc_sep_name, @Param("s")int start, @Param("e")int end);  
 	
+	public int selectPlaceSearchCount(@Param("l")String loc_sep_name);
 	
 }  

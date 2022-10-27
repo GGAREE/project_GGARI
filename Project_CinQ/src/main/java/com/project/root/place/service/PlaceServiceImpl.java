@@ -149,8 +149,22 @@ public class PlaceServiceImpl implements PlaceService{
 		
 	}
 
-	
+	@Override
+	public void PlaceSearchList(String loc_sep_name, Model model, int num) {
+		int pageLetter = 3;// 한 페이지 당 글 목록수
+		int allCount = mapper.selectPlaceSearchCount(loc_sep_name);// 전체 글수
+		int repeat = allCount/pageLetter;
+		if(allCount % pageLetter != 0)
+			repeat += 1;
+			int end = num * pageLetter;
+			int start = end + 1 - pageLetter;
+			model.addAttribute("repeat", repeat);
+		model.addAttribute("placeSearchList", mapper.placeSearchList(loc_sep_name, start, end));
+		
+	}
 
+	
+    
 
 	 
 	 

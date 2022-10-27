@@ -18,5 +18,9 @@ public interface PlaceService {
     public String modify(MultipartHttpServletRequest mul, HttpServletRequest request);
 	
     public String placeDelete(String id, int write_no, String imageFileName, HttpServletRequest request);
+
+	public void PlaceSearchList(String loc_sep_name, Model model, int num);
+	
+	
 }
  

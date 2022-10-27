@@ -31,7 +31,14 @@ max_count number(3)
 	<select id="placeAllListNum" resultMap="place">
       select B.* from
       (select rownum rn, A. * from   
-      (select * from place order by write_no desc) A) B <!-- date추가해야할지 생각해봐야함 -->
+      (select * from place order by write_no desc) A) B 
+      where rn between #{s} and #{e}
+   </select>
+   
+   <select id="placeSearchList" resultMap="place">
+      select B.* from
+      (select rownum rn, A. * from   
+      (select * from place where loc_sep_name like #{l} order by write_no desc ) A) B 
       where rn between #{s} and #{e}
    </select>
 	
@@ -61,6 +68,10 @@ max_count number(3)
     <delete id="delete">
 		delete place where write_no =#{write_no}
 	</delete>
+	
+	<select id="selectPlaceSearchCount" resultType="Integer">
+      select count(*) from place where loc_sep_name=#{l}
+    </select>
 </mapper>
 
  

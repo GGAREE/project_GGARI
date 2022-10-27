@@ -37,7 +37,7 @@ public class PlaceFileServiceImpl implements PlaceFileService{
 
 	@Override
 	public void deleteImage(String originFileName) {
-		// TODO Auto-generated method stub
+		
 		
 	}  
 

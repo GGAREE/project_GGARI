@@ -33,6 +33,9 @@ td {padding: 5px;}
                <th>제 목</th><td colspan="2">${data.title }</td>
             </tr>
             <tr>
+               <th>지 역</th><td colspan="2">${data.loc_sep_name}</td>
+            </tr>
+            <tr>
                <th>내용</th>
                <td colspan="2">
                   <c:if test="${data.image == 'nan'}">

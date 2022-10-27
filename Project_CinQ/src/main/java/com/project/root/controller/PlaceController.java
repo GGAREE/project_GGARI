@@ -99,14 +99,19 @@ public class PlaceController implements MemberSession{
 			out.println(message);
 			
 		}	
-	 
-	 @GetMapping("/kakaoMapTest")
-		public String kakaoMapTest() {
-			System.out.println("카카오 api 테스트");
-			
-			 return "place/kakaoMapTest";
+	
+	 @PostMapping("placeSearchList")
+		public String placeSearchList(@RequestParam(value="loc_sep_name") String loc_sep_name, Model model, @RequestParam(value = "num", required = false, defaultValue="1") int num) {
+		 System.out.println(loc_sep_name);
+		 if(loc_sep_name != null) {     
+			 ps.PlaceSearchList(loc_sep_name, model, num);
+		 } else {
+			 ps.PlaceAllListNum(model, num);
+		 }
+		 
+		      return "place/placeAllListNum";
 		}
-		
+	
 }
 
 
