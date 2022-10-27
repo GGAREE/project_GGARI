@@ -10,6 +10,9 @@ public class PlaceDTO {
 	private String loc_name;
 	private String loc_sep_name;
 	private int max_count;
+	private String checkbox;
+	
+	
 	public int getWrite_no() {
 		return write_no;
 	}
@@ -57,6 +60,12 @@ public class PlaceDTO {
 	}
 	public void setMax_count(int max_count) {
 		this.max_count = max_count;
+	}
+	public String getCheckbox() {
+		return checkbox;
+	}
+	public void setCheckbox(String checkbox) {
+		this.checkbox = checkbox;
 	}
 	
 	

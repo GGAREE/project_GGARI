@@ -25,7 +25,8 @@ max_count number(3)
 		<result property="image" column="image"/>
 		<result property="loc_name" column="loc_name"/>
 		<result property="max_count" column="max_count"/>
-		<result property="loc_sep_name" column="loc_sep_name"></result>
+		<result property="loc_sep_name" column="loc_sep_name"/>
+		<result property="checkbox" column="checkbox"/>
 	</resultMap>
 	
 	<select id="placeAllListNum" resultMap="place">
